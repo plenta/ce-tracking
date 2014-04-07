@@ -73,17 +73,6 @@ $GLOBALS['TL_DCA']['tl_content']['fields']['cookieRedirect'] = array
 
 $GLOBALS['TL_DCA']['tl_content']['fields']['cookieJumpTo'] = array
 (
-	/*
-	'label'			=> &$GLOBALS['TL_LANG']['tl_content']['cookieJumpTo'],
-	'inputType'		=> 'text',
-	'exclude'		=> true,
-	'eval'			=> array('mandatory'=>true, 'maxlength'=>255, 'tl_class'=>'long wizard'),
-	'wizard'		=> array
-	(
-		array('tl_content', 'pagePicker')
-	),
-	'sql'               => "varchar(255) NOT NULL default ''"
-	*/
 	'label'				=> &$GLOBALS['TL_LANG']['tl_content']['cookieJumpTo'],
 	'exclude'           => true,
 	'inputType'         => 'pageTree',
