@@ -57,7 +57,12 @@ class ContentCookie extends \ContentElement
 		// Redirect visitor
 		if ($this->cookieRedirect && strlen($this->cookieJumpTo))
 		{
-			$this->redirect($this->replaceInsertTags($this->cookieJumpTo));
+			$objRedirectPage = \PageModel::findPublishedById($this->cookieJumpTo));
+
+			if ($objRedirectPage !== null)
+			{
+				$this->redirect($this->generateFrontendUrl($objRedirectPage->row()));
+			}
 		}
 
 		return '';
