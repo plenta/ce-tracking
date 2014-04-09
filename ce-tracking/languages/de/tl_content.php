@@ -24,9 +24,8 @@ $GLOBALS['TL_LANG']['tl_content']['cookieExpire'] = array('Laufzeit', 'Anzahl Se
 $GLOBALS['TL_LANG']['tl_content']['cookieReplace'] = array('Vorhandene ersetzen', 'Klicken Sie hier wenn vorhandene Cookies mit demselben Namen ersetzt werden sollen.');
 $GLOBALS['TL_LANG']['tl_content']['cookieRedirect'] = array('Besucher weiterleiten', 'Nach dem setzen des Cookies weiterleiten.');
 $GLOBALS['TL_LANG']['tl_content']['cookieJumpTo'] = array('Weiterleiten zu', 'URL für die Weiterleitung. Insert-Tags sind erlaubt.');
-
 $GLOBALS['TL_LANG']['tl_content']['cookieZCheckCookie'][0] = 'Weiterleitung aus zCheckCookie-Modul';
-$GLOBALS['TL_LANG']['tl_content']['cookieZCheckCookie'][1] = 'gchgchgc';
+$GLOBALS['TL_LANG']['tl_content']['cookieZCheckCookie'][1] = 'Automatische Weiterleitung.';
 
 
 /**
