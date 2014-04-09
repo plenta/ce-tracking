@@ -18,7 +18,7 @@
 /**
  * Palettes
  */
-$GLOBALS['TL_DCA']['tl_content']['palettes']['cookie'] = '{type_legend},type;{cookie_legend},cookieName,cookieValue,cookieExpire,cookieReplace;{redirect_legend},cookieRedirect';
+$GLOBALS['TL_DCA']['tl_content']['palettes']['cookie'] = '{type_legend},type;{cookie_legend},cookieName,cookieValue,cookieExpire,cookieReplace;{redirect_legend},cookieZCheckCookie,cookieRedirect';
 $GLOBALS['TL_DCA']['tl_content']['palettes']['__selector__'][] = 'cookieRedirect';
 $GLOBALS['TL_DCA']['tl_content']['subpalettes']['cookieRedirect'] = 'cookieJumpTo';
 
@@ -80,5 +80,13 @@ $GLOBALS['TL_DCA']['tl_content']['fields']['cookieJumpTo'] = array
 	'eval'              => array('fieldType'=>'radio', 'mandatory'=>true),
 	'sql'               => "int(10) unsigned NOT NULL default '0'",
 	'relation'          => array('type'=>'hasOne', 'load'=>'eager')
-	
+);
+
+$GLOBALS['TL_DCA']['tl_content']['fields']['cookieZCheckCookie'] = array
+(
+	'label'			=> &$GLOBALS['TL_LANG']['tl_content']['cookieZCheckCookie'],
+	'inputType'		=> 'checkbox',
+	'exclude'		=> true,
+	'eval'			=> array('tl_class'=>'clr'),
+	'sql'           => "char(1) NOT NULL default '0'"
 );

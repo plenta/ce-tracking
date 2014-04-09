@@ -53,6 +53,17 @@ class ContentCookie extends \ContentElement
 			$this->setCookie($this->cookieName, $varCookie, time() + $this->cookieExpire);
 			$blnCookie = true;
 		}
+		
+		// Redirect by zCheckCookie value
+		if($this->cookieZCheckCookie && $_SESSION['ZCHECKCOOKIE_CURRENT_PAGE'])
+		{
+			$objRedirectPage = \PageModel::findPublishedById($_SESSION['ZCHECKCOOKIE_CURRENT_PAGE']);
+
+			if ($objRedirectPage !== null)
+			{
+				$this->redirect($this->generateFrontendUrl($objRedirectPage->row()));
+			}
+		}
 
 		// Redirect visitor
 		if ($this->cookieRedirect && strlen($this->cookieJumpTo))

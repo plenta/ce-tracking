@@ -18,10 +18,19 @@
 /**
  * Fields
  */
-$GLOBALS['TL_LANG']['tl_content']['redirect_legend'] = 'Weiterleiten nach Setzen des Cookies';
 $GLOBALS['TL_LANG']['tl_content']['cookieName'] = array('Cookie-Name', 'Geben Sie einen eindeutigen Namen ein. Unter diesem Namen wird das Cookie beim Benutzer gespeichert.');
 $GLOBALS['TL_LANG']['tl_content']['cookieValue'] = array('Cookie-Wert', 'Geben Sie den Wert für dieses Cookie ein.');
 $GLOBALS['TL_LANG']['tl_content']['cookieExpire'] = array('Laufzeit', 'Anzahl Sekunden welche dieses Cookie beim Benutzer gespeichert wird.');
 $GLOBALS['TL_LANG']['tl_content']['cookieReplace'] = array('Vorhandene ersetzen', 'Klicken Sie hier wenn vorhandene Cookies mit demselben Namen ersetzt werden sollen.');
 $GLOBALS['TL_LANG']['tl_content']['cookieRedirect'] = array('Besucher weiterleiten', 'Nach dem setzen des Cookies weiterleiten.');
 $GLOBALS['TL_LANG']['tl_content']['cookieJumpTo'] = array('Weiterleiten zu', 'URL für die Weiterleitung. Insert-Tags sind erlaubt.');
+
+$GLOBALS['TL_LANG']['tl_content']['cookieZCheckCookie'][0] = 'Weiterleitung aus zCheckCookie-Modul';
+$GLOBALS['TL_LANG']['tl_content']['cookieZCheckCookie'][1] = 'gchgchgc';
+
+
+/**
+ * Legends
+ */
+$GLOBALS['TL_LANG']['tl_content']['cookie_legend'] = 'Cookies';
+$GLOBALS['TL_LANG']['tl_content']['redirect_legend'] = 'Weiterleiten nach Setzen des Cookies';

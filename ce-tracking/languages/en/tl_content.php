@@ -18,10 +18,15 @@
 /**
  * Fields
  */
-$GLOBALS['TL_LANG']['tl_content']['redirect_legend'] = 'Redirect after the cookie was created';
 $GLOBALS['TL_LANG']['tl_content']['cookieName'] = array('Cookie Name', 'The cookie is stored on the users\'s computer with this name.');
 $GLOBALS['TL_LANG']['tl_content']['cookieValue'] = array('Cookie Value', 'Value for this cookie.');
 $GLOBALS['TL_LANG']['tl_content']['cookieExpire'] = array('Expiration', 'Enter the lifetime of this cookie in seconds');
 $GLOBALS['TL_LANG']['tl_content']['cookieReplace'] = array('Replace existing cookie', 'Check here if you want to replace existing cookies with same name.');
 $GLOBALS['TL_LANG']['tl_content']['cookieRedirect'] = array('Redirect visitors', 'Redirect visitors after settings the cookie.');
 $GLOBALS['TL_LANG']['tl_content']['cookieJumpTo'] = array('Redirect to', 'Full URL of the forwarding page. Can be an insert-tag.');
+
+/**
+ * Legends
+ */
+$GLOBALS['TL_LANG']['tl_content']['cookie_legend'] = 'Cookies';
+$GLOBALS['TL_LANG']['tl_content']['redirect_legend'] = 'Redirect after the cookie was created';
