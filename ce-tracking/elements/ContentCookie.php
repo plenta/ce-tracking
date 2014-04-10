@@ -38,7 +38,6 @@ class ContentCookie extends \ContentElement
 		}
 
 		parent::generate();
-		
 
 		$blnCookie = false;
 		$varCookie = \Input::cookie($this->cookieName);
