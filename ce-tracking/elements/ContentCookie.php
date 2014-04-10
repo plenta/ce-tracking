@@ -55,9 +55,9 @@ class ContentCookie extends \ContentElement
 		}
 		
 		// Redirect by zCheckCookie value
-		if($this->cookieZCheckCookie && $_SESSION['ZCHECKCOOKIE_CURRENT_PAGE'])
+		if($this->cookieZCheckCookie && \Input::cookie('ZCHECKCOOKIE_PAGEID'))
 		{
-			$objRedirectPage = \PageModel::findPublishedById($_SESSION['ZCHECKCOOKIE_CURRENT_PAGE']);
+			$objRedirectPage = \PageModel::findPublishedById(\Input::cookie('ZCHECKCOOKIE_PAGEID'));
 
 			if ($objRedirectPage !== null)
 			{
