@@ -38,6 +38,7 @@ class ContentCookie extends \ContentElement
 		}
 
 		parent::generate();
+		
 
 		$blnCookie = false;
 		$varCookie = \Input::cookie($this->cookieName);
@@ -83,5 +84,5 @@ class ContentCookie extends \ContentElement
 	/**
 	 * This function does nothing but is required cause it is abstract in parent class.
 	 */
-	 protected function compile() {}
+	protected function compile() {}
 }
